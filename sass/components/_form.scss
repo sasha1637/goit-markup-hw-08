@@ -97,18 +97,16 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   &__icon {
     position: absolute;
     width: 16px;
     height: 15px;
   }
-
-  &:checked + .checkbox__icon {
+  &__input:checked + .checkbox__wraper {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }
-  &:focus + .checkbox__icon {
+  &__input:focus + .checkbox__wraper {
     border-color: var(--accent-color);
   }
   &__title {
