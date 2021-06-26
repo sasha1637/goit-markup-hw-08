@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Шапка сайта-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__container container">
         <nav class="header__nav">
             <a href="./index.html" class=" header__logo logo"> <span class="logo__first-part">Web</span>Studio</a>
@@ -33,16 +33,16 @@
         </li> 
         </ul>
         </div>
-    </header>
+    </header> -->
     <main>
 <!--  Герой  -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button type="button" class="button-modal" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-        
+         -->
         <!-- Преимущества -->
         <section class="advantage section ">
             <div class="advantage__container container">
@@ -92,7 +92,7 @@
             </div>
         </section>
 <!--  чем мы занимаемся  -->
-        <section class="services section">
+<section class="services section">
              <div class="container">
             <h2 class="services__title">Чем мы занимаемся</h2>
             <ul class="services__list list">
@@ -113,11 +113,28 @@
             <div class="container"> 
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
-                <li class="team__item"><img src="./image/teamCard1.jpg" alt="фото" width="270">
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/comand/desktop-team1.webp 1x, ./images/comand/desktop-team1@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/comand/desktop-team1.jpg 1x, ./images/comand/desktop-team1@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                        <source srcset="./images/comand/tablet-team1.webp 1x, ./images/comand/tablet-team1@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/comand/tablet-team1.jpg 1x, ./images/comand/tablet-team1@2x.jpg 2x"
+                            media="(min-width: 768px)">
+
+                        <source srcset="./images/comand/mob-team1.webp 1x, ./images/comand/mob-team1@2x.webp 2x" 
+                        media="(min-width: 280px)" type="image/webp">
+                        <source srcset="./images/comand/mob-team1.jpg 1x, ./images/comand/mob-team1@2x.jpg 2x" 
+                        media="(min-width:280px)">
+                    <img src="#" alt="фото">
+                    </picture>
                     <div class="team__item-card">
                         <h3 class="team__item-card-title">Игорь Демьяненко</h3>
                         <p class="team__item-card-profession">Product Designer</p>
-                        <ul class="social-list list">
+                        <ul class="team__social-list social-list list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link link">
                                     <svg class="social-list__icon">
@@ -149,11 +166,27 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team__item"><img src="./image/teamCard2.jpg" alt="фото" width="270">
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/comand/desktop-team2.webp 1x, ./images/comand/desktop-team2@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/comand/desktop-team2.jpg 1x, ./images/comand/desktop-team2@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                    
+                        <source srcset="./images/comand/tablet-team2.webp 1x, ./images/comand/tablet-team2@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/comand/tablet-team2.jpg 1x, ./images/comand/tablet-team2@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                    
+                        <source srcset="./images/comand/mob-team2.webp 1x, ./images/comand/mob-team2@2x.webp 2x" media="(min-width: 280px)"
+                            type="image/webp">
+                        <source srcset="./images/comand/mob-team2.jpg 1x, ./images/comand/mob-team2@2x.jpg 2x" media="(min-width:280px)">
+                        <img src="#" alt="фото">
+                    </picture>
                     <div class="team__item-card">
                         <h3 class="team__item-card-title">Ольга Репина</h3>
                         <p class="team__item-card-profession">Frontend Developer</p>
-                        <ul class="social-list list">
+                        <ul class="team__social-list social-list list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link link">
                                     <svg class="social-list__icon">
@@ -185,11 +218,27 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team__item"><img src="./image/teamCard3.jpg" alt="фото" width="270">
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/comand/desktop-team3.webp 1x, ./images/comand/desktop-team3@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/comand/desktop-team3.jpg 1x, ./images/comand/desktop-team3@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                        <source srcset="./images/comand/tablet-team3.webp 1x, ./images/comand/tablet-team3@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/comand/tablet-team3.jpg 1x, ./images/comand/tablet-team3@2x.jpg 2x"
+                            media="(min-width: 768px)">
+
+                        <source srcset="./images/comand/mob-team3.webp 1x, ./images/comand/mob-team3@2x.webp 2x" media="(min-width: 280px)"
+                            type="image/webp">
+                        <source srcset="./images/comand/mob-team3.jpg 1x, ./images/comand/mob-team3@2x.jpg 2x" media="(min-width:280px)">
+                        <img src="#" alt="фото">
+                    </picture>
                     <div class="team__item-card">
                         <h3 class="team__item-card-title">Николай Тарасов</h3>
                         <p class="team__item-card-profession">Marketing</p>
-                        <ul class="social-list list">
+                        <ul class="team__social-list social-list list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link link">
                                     <svg class="social-list__icon">
@@ -221,11 +270,27 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team__item"><img src="./image/teamCard4.jpg" alt="фото" width="270">
+                <li class="team__item">
+                    <picture>
+                        <source srcset="./images/comand/desktop-team4.webp 1x, ./images/comand/desktop-team4@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/comand/desktop-team4.jpg 1x, ./images/comand/desktop-team4@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                    
+                        <source srcset="./images/comand/tablet-team4.webp 1x, ./images/comand/tablet-team4@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/comand/tablet-team4.jpg 1x, ./images/comand/tablet-team4@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                    
+                        <source srcset="./images/comand/mob-team4.webp 1x, ./images/comand/mob-team4@2x.webp 2x" media="(min-width: 280px)"
+                            type="image/webp">
+                        <source srcset="./images/comand/mob-team4.jpg 1x, ./images/comand/mob-team4@2x.jpg 2x" media="(min-width:280px)">
+                        <img src="#" alt="фото">
+                    </picture>
                     <div class="team__item-card">
                         <h3 class="team__item-card-title">Михаил Ермаков</h3>
                         <p class="team__item-card-profession">UI Designer</p>
-                        <ul class="social-list list">
+                        <ul class="team__social-list social-list list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link link">
                                     <svg class="social-list__icon">
@@ -259,7 +324,7 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section> -->
         <!-- Постоянные клиенты -->
         <section class="company section">
             <div class="container">
@@ -309,10 +374,10 @@
                 </li>
             </ul> 
             </div>
-        </section>
+        </section> -->
     </main>
 <!--  Подвал  -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__conteiner container">
             <div class="footer__address">
             <div class="footer__logo">
@@ -385,9 +450,9 @@
             </div>
         </form>
     </div>
-    </footer>
+    </footer> -->
     <!-- foter end -->
-<div class="backdrop is-hidden" data-modal>  <!--   -->
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal-window"> 
         <button type="button" class="modal-window__close-botton" data-modal-close>
         <svg class="modal-window__icon-close">
@@ -446,7 +511,7 @@
         <button type="submit" class="modal-form__button button-modal  ">Отправить</button>
     </form>
     </div>
-</div>
-    <script src="./js/modal.js"></script>
+</div> -->
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
