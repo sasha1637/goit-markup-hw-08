@@ -23,9 +23,12 @@
   fill: var(--social-link-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company__item:hover &__link,
-.company__item:focus &__link {
+.company__item:hover .company__link,
+.company__item:focus .company__link {
   border-color: var(--accent-color);
+}
+.company__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 // 480+
@@ -47,6 +50,15 @@
 
   .company__link {
     width: 210px;
+  }
+  .company__item:hover .company__link,
+  .company__item:focus .company__link {
+    border-color: var(--accent-color);
+  }
+
+  .company__link:hover .company__icon,
+  .company__link:focus .company__icon {
+    fill: var(--accent-color);
   }
 }
 // 768+

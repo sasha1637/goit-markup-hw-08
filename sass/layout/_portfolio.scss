@@ -1,41 +1,19 @@
 .portfolio {
-  &__list {
+  .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
-  .portfolio__item {
-    &:nth-child(n) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
-  &__text-wraper {
-    padding: 20px 24px;
+  .portfolio__text-wraper {
     border: 1px solid #eeeeee;
     border-top: 0;
   }
-  &__title {
-    color: var(--title-text-color);
-    font-style: 700;
-    font-size: 18px;
-    line-height: 1.71;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-  }
-  &__description {
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--primary-text-color);
-  }
-  &__img-wraper {
+
+  .portfolio__img-wraper {
     position: relative;
     overflow: hidden;
   }
-  &__overlay {
+  .portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +28,20 @@
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__link {
+  .portfolio__title {
+    color: var(--title-text-color);
+    font-style: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .portfolio__description {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+  }
+  .portfolio__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
@@ -62,5 +53,57 @@
     &:hover .portfolio__overlay {
       transform: translateY(0);
     }
+  }
+}
+// // 0-767
+@media screen and (max-width: 767px) {
+  .portfolio__text-wraper {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+  }
+  .portfolio__item {
+    margin-top: 30px;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    &:nth-child(n) {
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .portfolio__link {
+    max-width: 354px;
+  }
+  .portfolio__text-wraper {
+    padding: 20px 24px;
+  }
+  .portfolio__text-kostul {
+    padding-bottom: 56px;
+  }
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    &:nth-child(n) {
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  .portfolio__link {
+    max-width: 370px;
+  }
+  .portfolio__text-kostul {
+    padding-bottom: 0;
   }
 }
