@@ -42,9 +42,10 @@
   position: relative;
   height: 100%;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__nav {
-  margin-bottom: 306px;
   .mobile-menu__nav-link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -65,6 +66,7 @@
 }
 .mobile-menu__contacts {
   margin-bottom: 64px;
+  margin-top: auto;
   &-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -85,6 +87,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .mobile-menu__item-social:not(:last-child) {
   margin-right: 20px;
