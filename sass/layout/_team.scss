@@ -24,6 +24,9 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-white-color);
 }
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .team__item-card {
   padding-top: 30px;
@@ -42,9 +45,6 @@
   margin-bottom: 16px;
 }
 @media screen and (min-width: 480px) {
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 // 768+
