@@ -18,15 +18,6 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 479px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero/mobile-img.jpg");
-  }
-}
 @media (min-device-pixel-ratio: 2) and (max-width: 479px),
   (min-resolution: 192dpi) and (max-width: 479px),
   (min-resolution: 2dppx) and (max-width: 479px) {
@@ -38,7 +29,15 @@
       url("../images/hero/mobile-img@2x.jpg");
   }
 }
-
+@media screen and (max-width: 479px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/mobile-img.jpg");
+  }
+}
 // 480+
 
 @media screen and (min-width: 480px) {
