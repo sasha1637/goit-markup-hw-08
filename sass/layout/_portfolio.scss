@@ -84,6 +84,9 @@
   .portfolio__text-wraper {
     padding: 20px 24px;
   }
+  .portfolio__description.kostul {
+    padding-bottom: 36px;
+  }
 }
 
 // 1200+
@@ -96,6 +99,9 @@
     &:nth-child(3n) {
       margin-right: 0;
     }
+  }
+  .portfolio__description.kostul {
+    padding-bottom: 0;
   }
   .portfolio__link {
     max-width: 370px;
