@@ -9,7 +9,6 @@
   .menu {
     display: flex;
     align-items: center;
-    margin-right: 88px;
     &__item:not(:last-child) {
       margin-right: 50px;
     }
