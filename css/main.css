@@ -623,7 +623,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .menu {
-    margin-right: 305px;
+    margin-right: 0px;
   }
 }
 
@@ -875,7 +875,7 @@ body {
             flex-direction: row;
   }
   .header__contacts-item:not(:last-child) {
-    margin-bottom: -10px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
