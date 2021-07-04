@@ -42,9 +42,10 @@
 }
 .footer__get-in {
   text-align: center;
+}
+.footer__tablet_position {
   margin-bottom: 60px;
 }
-
 .footer__get-in-title {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -153,6 +154,9 @@
     justify-content: space-around;
     align-items: baseline;
   }
+  .footer__address {
+    margin-bottom: 0;
+  }
 }
 
 // 1200+
@@ -163,6 +167,9 @@
 
     align-items: baseline;
     justify-content: space-between;
+  }
+  .footer__tablet_position {
+    margin: 0;
   }
   .footer__address {
     margin-right: 70px;
